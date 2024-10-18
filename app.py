@@ -28,6 +28,13 @@ hide_streamlit_style = """
     .audio-recorder-element svg {
         display: none;
     }
+
+    footer {visibility: hidden;}
+    footer:after {
+        content:'';
+        visibility: hidden;
+        display: none;
+    }
     </style>
 """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
